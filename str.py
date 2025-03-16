@@ -30,21 +30,28 @@
 s = 'Hello'
 
 # len()
+# 計算字串長度
 # print(len(s))
 
 # count()
+# 計算字串內文字數量
 # print(s.count('p'))
 
 # index()
+# 取得字串索引值
 # print(s.index('l'))
 
 # isalpha()
+# 判斷字串是否為英文
 # print(s.isalpha())
 # isdigit()
+# 判斷字串是否為數字
 # print(s.isdigit())
 # endswith()
+# 判斷字串最後一個字母是否為指定字母
 print(s.endswith('o'))
 # startswith()
+# 判斷字串第一個字母是否為指定字母
 print(s.startswith('H'))
 
 
