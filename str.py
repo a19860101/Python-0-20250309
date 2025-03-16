@@ -27,7 +27,7 @@
 # print(s[0:6:2])
 
 # String Method
-s = 'Hello'
+s = 'helLO world'
 
 # len()
 # 計算字串長度
@@ -38,8 +38,12 @@ s = 'Hello'
 # print(s.count('p'))
 
 # index()
-# 取得字串索引值
-# print(s.index('l'))
+# 取得字串索引值 若找不到會報錯
+
+# find()
+# 取得字串索引值 若找不到會回傳-1
+# print(s.index('h'))
+# print(s.find('h'))
 
 # isalpha()
 # 判斷字串是否為英文
@@ -49,19 +53,35 @@ s = 'Hello'
 # print(s.isdigit())
 # endswith()
 # 判斷字串最後一個字母是否為指定字母
-print(s.endswith('o'))
+# print(s.endswith('o'))
 # startswith()
 # 判斷字串第一個字母是否為指定字母
-print(s.startswith('H'))
+# print(s.startswith('H'))
 
 
 # upper()
+print(s.upper())
 # lower()
+print(s.lower())
 # capitalize()
+print(s.capitalize())
+# title()
+print(s.title())
 
 
 # replace()
-# find()
+s2 = 'hello john !!'
+# print(s2.replace('john','Andy'))
 
 # split()
+# q = s2.split()
+q = s2.split('o')
+print(type(s2))
+print(q)
+print(type(q))
+
 # strip()
+s3 = '   hello   '
+print(s3.strip())
+print(s3.lstrip())
+print(s3.rstrip())
