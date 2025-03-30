@@ -52,6 +52,10 @@ def getData(url):
     # print(nextPage['href'])
     return nextPage['href']
 
-getData('https://www.ptt.cc/bbs/movie/index.html')
+pageURL = 'https://www.ptt.cc/bbs/movie/index.html'
+count = 0
+while count < 100:
+    pageURL = 'https://www.ptt.cc'+getData(pageURL)
+    count += 1
 
 
