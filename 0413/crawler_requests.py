@@ -15,3 +15,4 @@ htmlfile = bs4.BeautifulSoup(data,'html.parser')
 titles = htmlfile.find_all('div',class_='title')
 for title in titles:
     print(title.a.string)
+
