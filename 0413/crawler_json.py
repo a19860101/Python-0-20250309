@@ -16,9 +16,14 @@ datas = datas.json()
 #     file.write(datas)
 
 
-print(datas['data'])
-for data in datas['data']:
-    print(f'{data['name']}:{data['price']}')
+# print(datas['data'])
+# for data in datas['data']:
+#     print(f'{data['name']}:{data['price']}')
+
+with open('kkday_txt.txt','w',encoding='utf-8') as file:
+    for data in datas['data']:
+        file.write(f'{data['name']}:{data['price']}\n')
+
 
 ## urllib 方法
 
