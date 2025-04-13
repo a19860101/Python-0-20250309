@@ -1,5 +1,4 @@
 import urllib.request as req
-import ssl
 
 def getData(url):
 
