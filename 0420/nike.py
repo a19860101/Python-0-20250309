@@ -28,6 +28,7 @@ time.sleep(3)
 #     print(title.text)
 
 for item in info:
-    print(item.text)
-
+    title = item.find_element(By.CLASS_NAME,'product-card__title').text
+    price = item.find_element(By.CLASS_NAME,'product-card__price').text
+    print(f'{title}:{price}')
 
