@@ -9,7 +9,7 @@ url ='https://www.nike.com/tw/'
 driver = webdriver.Chrome()
 
 driver.get(url)
-
+driver.maximize_window()
 link = driver.find_element(By.LINK_TEXT,'男款')
 
 link.click()
