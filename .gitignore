@@ -2,3 +2,4 @@ test.py
 *.txt
 *.json
 *.csv
+*.xlsx
