@@ -7,12 +7,16 @@ print(datas.columns)
 # print(datas['Add'])
 
 condition = datas['Add'].str.contains('中壢')
-# result = result[['Name','Add','Tel']]
 result = datas[condition]
+
+# 保留需要的欄位
+# result = result[['Name','Add','Tel']]
+# 刪除不需要的欄位
 result = result.drop(['Id','Px','Py'], axis=1)
+
 #
 # print(result['Name'])
-result.to_excel('chungli.xlsx')
+# result.to_excel('chungli.xlsx')
 
 
 # datas = pd.read_csv('COA_OpenData.csv')
