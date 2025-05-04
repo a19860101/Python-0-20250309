@@ -23,11 +23,11 @@ plt.legend()
 plt.show()
 
 
-data = [30, 70, 120]
-total = sum(data)
-
-
-data_2 = [ str(round(100 * d / total)) + '%' for d in data]
-print(data_2)
+# data = [30, 70, 120]
+# total = sum(data)
+#
+#
+# data_2 = [ str(round(100 * d / total)) + '%' for d in data]
+# print(data_2)
 
 
