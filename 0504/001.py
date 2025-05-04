@@ -2,7 +2,10 @@ import matplotlib.pyplot as plt
 
 listx = [1, 2, 3, 4, 5, 6]
 listy = [16, 26, 38, 15, 22, 30]
+# 設定微軟正黑體
 plt.rc('font',family='Microsoft Jhenghei')
+# 設定新細明體
+# plt.rc('font',family='MingLiu')
 
 plt.plot(listx,listy, marker='s', color='#ff8c00', linestyle='-',linewidth=1,markersize=5, label='五月')
 
