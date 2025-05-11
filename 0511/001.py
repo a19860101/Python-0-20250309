@@ -15,11 +15,18 @@ datas = pd.read_csv('../0504/outbound.csv')
 # print(datas)
 
 x = datas.columns[2:-1]
+
+# datas.iloc[1][2:-1]取出的資料型態為<class 'pandas.core.series.Series'>所以直接使用會有問題，需要轉成list
 h = [int(h) for h in datas.iloc[1][2:-1]]
+
 # h = datas.iloc[1][2:-1]
 # print(type(h))
 # print(datas.iloc[1][2:-1])
 
+color = ['red', 'skyblue', 'brown', '#ff5847', '#fa0']
+# 顏色參考 https://matplotlib.org/stable/gallery/color/named_colors.html#sphx-glr-gallery-color-named-colors-py
 
-plt.bar(x,h)
+tick_label = ['Japan', 'Korea', 'North Korea','Vietnam', 'Thailand']
+
+plt.bar(x,h, color=color, tick_label=tick_label, width=.2)
 plt.show()
