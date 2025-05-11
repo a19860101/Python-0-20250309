@@ -28,9 +28,14 @@ text1 = QtWidgets.QTextEdit(widget)
 # text1.move(100, 100)
 grid.addWidget(text1,1,1)
 
-def test():
-    print('hello')
+showLabel = QtWidgets.QLabel(widget)
+grid.addWidget(showLabel,3,0)
 
+def test():
+    # print('hello')
+    # print(input1.text())
+    # print(text1.toPlainText())
+    showLabel.setText(input1.text())
 
 btn = QtWidgets.QPushButton(widget)
 btn.setText('按我按我')
