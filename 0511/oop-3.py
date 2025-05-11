@@ -16,11 +16,12 @@ class Toyota(Car):
         self.brand = 'Toyota'
 
 
-
 class Tesla(Car):
     def __init__(self, color, door):
         super().__init__(color, door)
         self.brand = 'Tesla'
+
+
 c1 = Toyota('white',4)
 print(c1.brand)
 print(c1.__dict__)
