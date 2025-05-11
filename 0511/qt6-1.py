@@ -3,8 +3,15 @@ import sys
 
 app = QtWidgets.QApplication(sys.argv)
 
-form = QtWidgets.QWidget()
+widget = QtWidgets.QWidget()
 
-form.show()
+widget.setWindowTitle('Hello QT6')
+widget.resize(400,300)
+
+label = QtWidgets.QLabel(widget)
+label.setText('TEST')
+
+
+widget.show()
 
 sys.exit(app.exec())
