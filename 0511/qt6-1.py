@@ -28,6 +28,16 @@ text1 = QtWidgets.QTextEdit(widget)
 # text1.move(100, 100)
 grid.addWidget(text1,1,1)
 
+def test():
+    print('hello')
+
+
+btn = QtWidgets.QPushButton(widget)
+btn.setText('按我按我')
+grid.addWidget(btn, 2, 0)
+btn.clicked.connect(test)
+
+
 widget.show()
 
 sys.exit(app.exec())
