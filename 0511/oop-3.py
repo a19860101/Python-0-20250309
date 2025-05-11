@@ -8,13 +8,23 @@ class Car:
 
 
 class Toyota(Car):
-    pass
+    # pass
+    # brand = 'Toyota'
+    def __init__(self, color, door):
+        super().__init__(color, door)
+        # self.brand = brand
+        self.brand = 'Toyota'
+
+
 
 class Tesla(Car):
-    pass
-
+    def __init__(self, color, door):
+        super().__init__(color, door)
+        self.brand = 'Tesla'
 c1 = Toyota('white',4)
+print(c1.brand)
 print(c1.__dict__)
 
-c2 = Tesla('red', 5)
+c2 = Tesla('red',4)
 print(c2.__dict__)
+
